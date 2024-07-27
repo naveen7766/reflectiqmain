@@ -1,0 +1,466 @@
+/* Apply the font family to the entire document */
+body {
+    font-family: 'Studio-Feixen-Sans', Arial, sans-serif; /* Fallback to Arial if the custom font is not available */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.header {
+    background: #05192d; /* Dark blue background for header */
+    color: white; /* White text color */
+    padding: 10px 10px; /* Padding around the header */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    display: flex;
+    font-size: small;
+    flex-direction: column; /* Stack header-top and header-content vertically */
+}
+
+/* Styles for the top part of the header */
+.header-top {
+    display: flex;
+    justify-content: space-between; /* Space between contact info and any other elements */
+    align-items: center;
+    width: 100%; /* Full width for the top section */
+    height: 10px
+}
+
+.contact-info {
+    margin: 0;
+    color: #f4f4f4;
+}
+
+.logoicon {
+    width: 20px; /* Size of the icons */
+    vertical-align: middle; /* Align icons with text */
+}
+
+/* Styles for the main header content */
+.header-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width for the main content */
+    justify-content: space-between; /* Space between logo and nav/search container */
+}
+
+/* Logo container styles */
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    justify-content: flex-start; /* Align logo to the left */
+    padding: 10px 10px; /* Padding around the logo container */
+    background: #05192d; /* Match the header background */
+    margin-top: 5px; /* Add space between header and logo */
+}
+
+.logo-container .logo {
+    height: 30px; /* Height of the logo */
+}
+
+/* Container for navigation menu and search bar */
+.nav-search-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-end; /* Align items to the end (right side) */
+    width: 100%; /* Full width for the container */
+    gap: 20px; /* Space between nav items and search bar */
+}
+
+/* Navigation styles */
+
+.nav {
+    display: flex;
+    align-items: center; /* Center navigation items vertically */
+    gap: 20px;  /*Space between navigation items */
+}
+
+/* Navigation item styles */
+.nav ul {
+    list-style: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+}
+
+.nav ul li {
+    position: relative; /* Position relative for dropdown */
+    margin-left: 20px; /* Space between navigation items */
+}
+
+.nav a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-family: 'Studio-Feixen-Sans', Arial, sans-serif; /* Apply font family to navigation links */
+    display: inline-block;
+    padding: 1px 1px; /* Padding for links */
+    text-align: left; /* Center text inside links */
+    font-size: 16px; /* Font size for navigation links */
+}
+
+/* Dropdown button styles */
+.dropbtn {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button */
+    font-family: 'Studio-Feixen-Sans', Arial, sans-serif; /* Apply font family to dropdown button */
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position relative to the parent */
+    background-color: #05192d; /* Background color for dropdown menu */
+    min-width: 160px; /* Minimum width of the dropdown menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow for the dropdown menu */
+    z-index: 1; /* Ensure dropdown is on top */
+}
+
+.dropdown-content a {
+    color: white; /* White text color for dropdown links */
+    padding: 12px 16px; /* Padding inside dropdown links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Display links as block elements */
+    font-family: 'Studio-Feixen-Sans', Arial, sans-serif; /* Apply font family to dropdown links */
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown menu */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #034d73; /* Change background color of button on hover */
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex; /* Align search bar elements horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.search-icon {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-icon img {
+    width: 20px; /* Size of the search icon */
+}
+/* Header Styles */
+.header {
+    background: #05192d; /* Dark blue background for header */
+    color: white; /* White text color */
+    padding: 10px 10px; /* Padding around the header */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    display: flex;
+    font-size: small;
+    flex-direction: column; /* Stack header-top and header-content vertically */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Logo container styles */
+.logo-container {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+    justify-content: flex-start; /* Align logo to the left */
+    padding: 10px 10px; /* Padding around the logo container */
+    background: #05192d; /* Match the header background */
+    margin-top: 0; /* Remove margin-top */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center items vertically */
+    padding: 40px 20px; /* Padding around the Hero section */
+    background: #f4f4f4; /* Light background color for the Hero section */
+    margin-top: 0; /* Remove top margin */
+}
+
+.hero-text {
+    flex: 1; /* Allow the text container to take up available space */
+    max-width: 50%; /* Limit the width of the text container */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.hero-text h1 {
+    font-size: 2.5em; /* Font size for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero-text p {
+    font-size: 1.2em; /* Font size for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 30px; /* Space below the paragraph to separate from buttons */
+}
+
+/* Container for the buttons */
+.hero-buttons {
+    display: flex; /* Align buttons horizontally */
+    gap: 15px; /* Space between buttons */
+}
+
+/* Common button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1em; /* Font size for the button text */
+    text-align: center; /* Center text inside the button */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-family: 'Studio-Feixen-Sans', Arial, sans-serif; /* Apply font family */
+    color: white; /* Text color for buttons */
+}
+
+/* Styles for Register Today button */
+.btn-register {
+    background-color: #05192d; /* Background color for Register Today button */
+}
+
+/* Styles for Explore the Courses button */
+.btn-explore {
+    background-color: #034d73; /* Background color for Explore the Courses button */
+}
+
+/* Button hover effects */
+.btn:hover {
+    opacity: 0.9; /* Slightly fade buttons on hover */
+}
+
+/* Styles for Hero Image */
+.hero-image {
+    flex: 1; /* Allow the image container to take up available space */
+    max-width: 50%; /* Limit the width of the image container */
+    height: auto; /* Maintain aspect ratio */
+    overflow: auto; /* Hide any overflow */
+    background-color: #034d73;
+
+}
+
+.hero-image img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container */
+    display: block; /* Remove any extra space below the image */
+    background-color: #034d73;
+}
+
+/* Responsive Styles */
+
+/* For mobile screens */
+@media (max-width: 768px) {
+    /* Adjust header content layout */
+    .header-content {
+        flex-direction: column; /* Stack logo and nav/search container vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .logo-container {
+        margin-top: 0; /* Remove margin for mobile */
+    }
+
+    .nav-search-container {
+        margin-top: 20px; /* Add space between logo and nav/search container */
+        flex-direction: column; /* Stack nav and search bar vertically */
+        align-items: flex-end; /* Align items to the end (right side) */
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: flex-end; /* Align nav items to the end (right side) */
+        gap: 10px; /* Space between navigation items */
+    }
+
+    .nav ul {
+        margin-left: 0; /* Remove left margin */
+        padding: 0;
+        display: flex; /* Display list items in a row */
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Equal spacing between items */
+    }
+
+    .hero {
+        flex-direction: column; /* Stack text and image vertically */
+        padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .hero-text {
+        max-width: 100%; /* Full width for text container on mobile */
+        margin-right: 0; /* Remove margin for mobile */
+    }
+
+    .hero-image {
+        max-width: 100%; /* Full width for image container on mobile */
+        margin-top: 20px; /* Add space above image */
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+    }
+}
+/* Who We Are Section Styles */
+.who-we-are {
+    padding: 40px 20px; /* Padding around the section */
+    background: #f5f5f5; /* Light grey background for a clean look */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align text */
+}
+
+.who-we-are h2 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark grey color for the heading for better contrast */
+}
+
+.who-we-are p {
+    font-size: 1.2em; /* Font size for the paragraph text */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space below the paragraphs */
+    color: #555; /* Medium grey color for the text */
+}
+/* About Us Page Styles */
+.about-us, .our-mission, .our-services {
+    padding: 40px 20px; /* Padding around each section */
+    background: #f4f4f4; /* Light grey background for each section */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    margin-bottom: 20px; /* Space between sections */
+    text-align: center;
+}
+
+.about-us h2, .our-mission h2, .our-services h2 {
+    font-size: 2.5em; /* Font size for the headings */
+    margin-bottom: 20px; /* Space below the headings */
+    color: #05192d; /* Dark blue color for the headings */
+}
+
+.about-us p, .our-mission p, .our-services p {
+    font-size: 1.2em; /* Font size for the paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    color: #555; /* Medium grey color for the text */
+}
+
+.services-list {
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Wrap to next line if necessary */
+    gap: 20px; /* Space between service items */
+}
+
+.service-item {
+    flex: 1; /* Allow service items to grow and shrink */
+    background: #ffffff; /* White background for service items */
+    padding: 20px; /* Padding inside service items */
+    border-radius: 8px; /* Rounded corners for service items */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.service-item h3 {
+    font-size: 1.8em; /* Font size for service headings */
+    margin-bottom: 10px; /* Space below the service headings */
+    color: #05192d; /* Dark blue color for the service headings */
+}
+
+.service-item p {
+    font-size: 1.2em; /* Font size for service descriptions */
+    color: #555; /* Medium grey color for the text */
+}
+
+/* Student Training Life Cycle Section */
+.training-lifecycle {
+    padding: 20px; /* Padding around section */
+    background-color: #f4f4f4; /* Background color for section */
+}
+
+.training-lifecycle h2 {
+    text-align: center; /* Center align heading */
+    font-size: 2em; /* Larger font size for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.lifecycle-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between steps */
+    align-items: center; /* Center content vertically */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.cycle {
+    display: flex; /* Use flexbox for steps */
+    flex-wrap: wrap; /* Wrap steps on smaller screens */
+    justify-content: center; /* Center steps horizontally */
+    gap: 20px; /* Space between steps */
+}
+
+.step {
+    text-align: center; /* Center align step content */
+    max-width: 150px; /* Maximum width for step */
+    padding: 10px; /* Padding inside step */
+    background-color: white; /* Background color for step */
+    border-radius: 10px; /* Rounded corners for step */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for step */
+}
+
+.step img {
+    width: 80px; /* Width of step image */
+    height: 80px; /* Height of step image */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.step h3 {
+    font-size: 1.2em; /* Font size for step heading */
+}
+
+.connection {
+    width: 100%; /* Full width for connection */
+    height: 200px; /* Height for connection */
+}
+
+.connection svg {
+    width: 100%; /* Full width for SVG */
+    height: 100%; /* Full height for SVG */
+}
+/* Tools Section Styles */
+.tools {
+    padding: 40px 20px; /* Padding around the section */
+    background: #f4f4f4; /* Light grey background for a clean look */
+    border-radius: 8px; /* Rounded corners for a softer appearance */
+    text-align: center; /* Center align text */
+}
+
+.tools-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap tools to next line if necessary */
+    justify-content: space-around; /* Space between categories */
+}
+
+.tools-category {
+    display: flex; /* Use flexbox for tool layout */
+    flex-wrap: wrap; /* Wrap tools to next line if necessary */
+    gap: 20px; /* Space between tools */
+    margin: 0 auto; /* Center category in the container */
+}
+
+.tool {
+    display: flex; /* Use flexbox for tool layout */
+    flex-direction: column; /* Stack image and name vertically */
+    align-items: center; /* Center align items */
+}
+
+.tool img {
+    width: 80px; /* Width of tool images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below image */
+}
+
+.tool p {
+    font-size: 1.2em; /* Font size for tool names */
+    color: #555; /* Medium grey color for text */
+}
