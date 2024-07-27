@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReflectsIQ - Empower Your Future through Skill Development</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('body').insertAdjacentHTML('afterbegin', data);
+                });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Top part of the header for contact information -->
+        <div class="header-top">
+            <p class="contact-info">
+                Have a Question?&nbsp;&nbsp;&nbsp;
+                <img src="C:\Users\pulug\Desktop\Sample Website\Images\call.png" alt="call" class="logoicon"> 9502220848&nbsp;&nbsp;&nbsp;
+                <img src="C:\Users\pulug\Desktop\Sample Website\Images\whatsapp.png" alt="Whatsapp" class="logoicon"> 9502220848&nbsp;&nbsp;&nbsp;
+                <img src="C:\Users\pulug\Desktop\Sample Website\Images\gmail.png" alt="Email" class="logoicon"> 
+                <a href="mailto:info@reflectsiq.com">info@reflectsiq.com</a>
+            </p>
+        </div>
+
+        <!-- Main header content including logo and navigation -->
+        <div class="header-content">
+            <!-- Logo container -->
+            <div class="logo-container">
+                <a href=index.html><img src="C:\Users\pulug\Desktop\Sample Website\Images\Logo.png" alt="ReflectsIQ Logo" class="logo"></a>
+            </div>
+
+            <!-- Navigation menu and search bar -->
+            <div class="nav-search-container">
+                <nav class="nav">
+                    <ul>
+                        <li class="dropbtn"><a href=about-us.html>About Us</a></li>
+                        <li class="dropdown">
+                            <!-- Dropdown button for courses -->
+                            <button class="dropbtn">Courses</button>
+                            <div class="dropdown-content">
+                                <a href="data-science.html" class="cta-button">Data Science</a>
+                                <a href="full-stack.html" class="cta-button">Full Stack Development</a>
+                                <a href="machine-learning.html" class="cta-button">Machine Learning</a>
+                            </div>
+                        </li>
+                        <li class="dropbtn"><a href="#hire">Hire From Us</a></li>
+                        <li class="dropbtn"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Search bar -->
+                <div class="search-bar">
+                    <button onclick="searchFunction()" class="search-icon">
+                        <img src="C:\Users\pulug\Desktop\Sample Website\Images\search-icon.png" alt="Search"> <!-- Search icon image -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+ <main>
+
+  <section class="about-us">
+            <h2>About Us</h2>
+            <p>At ReflectsIQ, we believe in the power of hands-on learning. Our immersive case-based curriculum in AI/ML, Data Analytics, and Full Stack Development combines theoretical knowledge with real-world application, empowering you to become a confident and sought-after tech professional.</p>
+        </section>
+        <section class="our-mission">
+            <h2>Our Mission</h2>
+            <p>We are committed to empowering individuals through transformative education and skill development. Our mission is to bridge the gap between talent and opportunity by providing high-quality, mentorship-driven training programs. Our expert instructors bring real-world experience and practical insights to help you excel in the fields of AI, Data Analytics, Full Stack Development, and more.
+            </p>
+            <p>
+                Our training programs are designed not only to impart theoretical knowledge but also to equip you with the practical skills required to tackle real-world challenges. Join us to gain hands-on experience, connect with industry professionals, and take your career to the next level.
+            </p>
+        </section>
+        <section class="our-services">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Case based Training</h3>
+                    <p>Receive tailored training that meets your specific career needs and goals by solving real world problems</p>
+                </div>
+                <div class="service-item">
+                    <h3>Industry Mentorship</h3>
+                    <p>Get guidance and support from experienced industry professionals.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Hands-On Projects</h3>
+                    <p>Work on real-world projects to apply your knowledge and gain practical experience.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+  
+    <footer class="footer">
+        <p>&copy; 2024 ReflectsIQ. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Sitemap</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</main>
+</html>
